@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Edutrip to Jogja</title> 
+
+    <style>
+         h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 3px; /* Space between letters */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+        }
+        header {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            background: #584738;
+            color: #b59e7d;
+            padding: 20px 0;
+        }
+        nav {
+            background: #aaa396;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4C2308;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #5C3422, #98755b);
+            color: #333;
+        }
+        .hero {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay for text visibility */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.hero-overlay h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-overlay h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.info-section {
+    background: #f8f6f3;
+    color: #333;
+    padding: 3rem 1.5rem;
+    text-align: justify;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.info-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #4C2308;
+}
+
+.info-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.info-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.alt-section {
+    background: #a86d24;
+    color: #2c1f12;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.alt-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.alt-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.alt-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.highlight-section {
+    background: #fff3e6;
+    color: #3b2616;
+    padding: 3rem 1.5rem;
+    text-align: justify;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 4px solid #b59e7d;
+    border-bottom: 4px solid #b59e7d;
+}
+
+.highlight-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #4C2308;
+}
+
+.highlight-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.highlight-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.mission-section {
+    background: #f4efe9;
+    color: #2a1a0e;
+    padding: 3rem 1.5rem;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 3px dashed #98755b;
+}
+
+.mission-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #5C3422;
+}
+
+.mission-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+.mission-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>IPS</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="agama.html">Agama</a>
+        <a href="pendidikan_pancasila.html">Pendidikan Pancasila</a>
+        <a href="bahasa_indonesia.html">Bahasa Indonesia</a>
+        <a href="english.html">Bahasa Inggris</a>
+        <a href="ips.html">IPS</a>
+        <a href="mandarin.html">Bahasa Mandarin</a>
+    </nav>
+    
+    <section class="hero">
+        <img src="banner edutrip.png" alt="Banner" class="hero-img">
+        <div class="hero-overlay">
+            <h2>Selamat datang di Jogja/Solo!</h2>
+        </div>
+    </section>
+    
+    <section class="info-section">
+        <h2>Pengalaman membajak sawah menggunakan sapi di desa pentingsari</h2>
+        <img src="membajaksawah.jpeg" alt="Membajak sawah menggunakan sapi" class="info-img">
+        <p>
+            Saya dan peserta lainnya berkesempatan mencoba membajak sawah menggunakan kerbau di Desa Penting Sari. Proses ini melibatkan kerbau yang dilatih untuk membajak tanah, dengan petani mengarahkan hewan tersebut menggunakan tali dan perintah suara. Meskipun sulit, pengalaman ini memberikan wawasan tentang bagaimana kerbau membantu mengolah tanah dengan cara yang ramah lingkungan dan tradisional. Selain mengolah tanah, ini adalah bagian dari tradisi dan pelestarian budaya kami. Kerbau lebih ramah lingkungan daripada alat berat dan membantu kami menjaga hubungan dengan alam.Perubahan cara hidup ini disebabkan oleh beberapa faktor, seperti perubahan iklim yang mempengaruhi ketersediaan sumber daya alam dan peningkatan kemampuan manusia dalam bertani. Seiring dengan berkembangnya teknologi, manusia mulai mengembangkan alat pertanian dan domestikasi hewan, yang membuat mereka lebih menetap dan bergantung pada pertanian untuk kebutuhan pangan. Faktor-faktor ini, ditambah dengan kebutuhan akan pemukiman yang lebih stabil, memicu peralihan dari berburu dan meramu ke cara hidup yang lebih bertani.
+        </p>
+    </section>
+    <section class="alt-section">
+        <h2>Wawancara dengan wisatawan asing dan domestik di Candi Prambanan</h2>
+        <p>Pertanyaan: Apa pendapat anda mengenai candi prambanan dan borobudur?</p>
+        <p>Wisatawan Asing: "Kedua candi ini luar biasa! Prambanan dengan arsitekturnya yang bagus dan sangat tinggi, saya kaget saat melihatnya langsung. saya belum pernah melihat hal seperti ini" (translated to indonesian)</p>
+        <p>Wisatawan domestik: "Kalau menurut saya, Borobudur lebih ke arah spiritual dan tenang. Karena itu candi Buddha, suasananya damai banget, apalagi pas pagi-pagi. Sementara Prambanan lebih megah, tinggi-tinggi candinya, dan ada kisah-kisah Ramayana yang diukir. Dua-duanya punya vibe yang beda tapi sama-sama luar biasa." </p>
+        <img src="foto dengan wisatawan.jpg" alt="foto dengan wisatawan asing" class="alt-img">
+   
+    </section>
+    <section class="highlight-section">
+        <h2>Museum Sangiran</h2>
+    
+        <img src="museum pentingsari.jpg" alt="Sangiran" class="highlight-img">
+    
+        <p>
+            Masyarakat purba di Sangiran hidup dengan cara berburu dan meramu sebagai metode utama untuk memenuhi kebutuhan hidup mereka. Mereka berburu hewan untuk makanan dan meramu tumbuhan liar. Kehidupan mereka sangat tergantung pada alam, dan mereka memiliki pengetahuan yang mendalam tentang flora dan fauna di sekitar mereka.
+        </p>
+    </section>
+    <section class="mission-section">
+        <h2>Orang tua asuh di desa Pentingsari</h2>
+    
+        <p>Mata pencaharian / pekerjaan: dari homestay</p>
+        <p>Riwayat bangunan tempat tinggal: dari 2009</p>
+        <p>Peran di masyarakat: ketua desa Pentingsari</p>
+        <p>Tradisi keluarga: lebaran pulang ke Jakarta</p>
+        <p>Tradisi masyarakat: prosesi kenduri, dusun, membangunkan sahur</p>
+        <p>Pengelolaan keuangan: membayar anak kuliah</p>
+        <p>Pengelolaan lingkungan: setiap minggu dan Jumat warga desa bersih-bersih bersama,ada juga membersihkan seluruh desa</p> 
+
+        <img src="ning.jpg" alt="Live in" class="mission-img">
+    </section>
+    
+    

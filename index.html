@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Edutrip to Jogja</title>
+    
+    <style>
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 3px; /* Space between letters */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #5C3422, #98755b);
+            color: #333;
+        }
+        header {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            background: #584738;
+            color: #b59e7d;
+            padding: 20px 0;
+        }
+        nav {
+            background: #aaa396;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4C2308;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #d7bda6;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 1.6;
+            text-align: center;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Edutrip to Jogja-Solo</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="agama.html">Agama</a>
+    <a href="pendidikan_pancasila.html">Pendidikan Pancasila</a>
+    <a href="bahasa_indonesia.html">Bahasa Indonesia</a>
+    <a href="english.html">Bahasa Inggris</a>
+    <a href="ips.html">IPS</a>
+    <a href="mandarin.html">Bahasa Mandarin</a>
+</nav>
+    
+<div class="container">
+    <h2>Sharing my experience in Jogja-Solo</h2>
+    <p>Exploring every side of Jogja and Solo for 7 days. Unforgettable experiences and lessons that we'll bring to the future.</p>
+    <img id="changingImage" src="jogja.jpg" alt="Changing Picture" width="100%">
+</div>
+
+    <script>
+
+    let images = ["jogja.png", "j-2.png", "yogyakarta-international-airport-diy-di-kabupaten-kulon-progo-sabtu-7122024_169.jpeg"]; // List of images
+    let index = 0;
+
+    function changeImage() {
+        index = (index + 1) % images.length; // Loop through images
+        document.getElementById("changingImage").src = images[index];
+    }
+
+    setInterval(changeImage, 3000); // Change every 3 seconds
+
+</script>
+
+</body>
+</html>

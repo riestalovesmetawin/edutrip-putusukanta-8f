@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Edutrip to Jogja</title> 
+
+    <style>
+        header {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        background: #584738;
+        color: #b59e7d;
+        padding: 20px 0;
+        margin-bottom: 10px; /* Added space between header and other content */
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+        nav {
+            background: #aaa396;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4C2308;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #5C3422, #98755b);
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 200px); /* Three columns */
+            grid-template-rows: repeat(2, 200px); /* Two rows */
+            gap: 40px; /* Increased spacing between boxes */
+            margin-bottom: 20px;
+        }
+        .square {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 243, 220);
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            transition: background 0.3s;
+            padding: 15px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .square:hover {
+            background-color: rgb(177, 165, 139);
+            color: white;
+        }
+        .text {
+            display: none;
+            max-width: 300px;
+            text-align: justify;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .instruction {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Add space between the instruction and the boxes */
+    color: #ffffff;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pendidikan Pancasila</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="agama.html">Agama</a>
+        <a href="pendidikan_pancasila.html">Pendidikan Pancasila</a>
+        <a href="bahasa_indonesia.html">Bahasa Indonesia</a>
+        <a href="english.html">Bahasa Inggris</a>
+        <a href="ips.html">IPS</a>
+        <a href="mandarin.html">Bahasa Mandarin</a>
+    </nav>
+
+    <p class="instruction">Press each box one by one to see answer</p>
+
+    <div class="container">
+        <div class="square" onclick="showText(1)">Istimewanya Arsitektur Prambanan </div>
+        <div class="square" onclick="showText(2)">Perbandingan Prambanan dengan Borobudur</div>
+        <div class="square" onclick="showText(3)">Pengaruh Arsitektur Prambanan</div>
+        <div class="square" onclick="showText(4)">Peran budaya dan agama dalam pembangunan</div>
+        <div class="square" onclick="showText(5)">Peran kerajaan Yogyakarta dalam pembentukan nasionalisme Indonesia</div>
+        <div class="square" onclick="showText(6)">Keraton mempertahankan nilai budaya Indonesia</div>
+    </div>
+
+    <div id="textContainer">
+        <p id="text1" class="text">Pembangunan Candi Prambanan sangat dipengaruhi oleh agama Hindu dan budaya Jawa kuno. Candi ini didedikasikan untuk dewa-dewa Hindu, seperti Brahma, Wisnu, dan Siwa, dan berfungsi sebagai tempat ibadah serta simbol keagamaan. Selain itu, tata letak dan struktur candi mengikuti konsep kosmologi Hindu, menggambarkan hubungan manusia dengan alam semesta dan dewa-dewa. Candi ini juga mencerminkan kekuasaan Dinasti Sanjaya yang mendominasi Jawa pada saat itu, sekaligus sebagai pusat budaya Hindu yang memperkenalkan ajaran-ajaran spiritual dan moral melalui relief yang menggambarkan kisah Ramayana dan Mahabharata.</p>
+        <p id="text2" class="text">Arsitektur Candi Prambanan dan Borobudur sangat berbeda meskipun keduanya merupakan situs penting dalam sejarah Indonesia. Candi Prambanan bercorak Hindu, dengan struktur candi yang menjulang tinggi, menggambarkan puncak gunung Meru dalam mitologi Hindu. Sementara itu, Candi Borobudur adalah candi Buddha dengan desain yang berbentuk stupa bertingkat, melambangkan perjalanan spiritual menuju pencerahan. Prambanan menekankan aspek vertikal dan monumental, sedangkan Borobudur lebih menonjolkan aspek horizontal dan simbolis dengan relief yang menggambarkan ajaran Buddha. Keduanya memiliki peran besar dalam pengembangan seni dan arsitektur agama masing-masing di Nusantara.</p>
+        <p id="text3" class="text">Warisan arsitektur Candi Prambanan memberikan pengaruh besar terhadap bangunan-bangunan keagamaan dan budaya di Indonesia, seperti pura-pura di Bali dan beberapa masjid tradisional di Jawa. Desain candi Prambanan yang monumental dan penggunaan relief sebagai media penyampaian ajaran agama menginspirasi pembangunan candi Hindu lainnya, seperti Candi Sewu dan Candi Penataran. Selain itu, elemen arsitektur seperti meru (menara) dalam pura Bali dan struktur bangunan berundak dalam beberapa pura dan masjid juga mencerminkan pengaruh Prambanan. Keindahan dan keunikan desain ini juga memengaruhi desain bangunan modern dan simbolisme kebudayaan Indonesia.</p>
+        <p id="text4" class="text">Candi Prambanan dibangun dengan tujuan keagamaan, yaitu sebagai tempat pemujaan bagi dewa-dewa Hindu, dan sebagai simbol kekuasaan Dinasti Sanjaya. Agama Hindu menjadi faktor utama dalam desain dan fungsi candi ini, dengan struktur candi yang mencerminkan kosmologi Hindu. Selain itu, candi ini juga berfungsi sebagai sarana pendidikan spiritual bagi masyarakat pada masanya, dengan relief yang menggambarkan kisah-kisah epik seperti Ramayana dan Mahabharata yang mengandung ajaran moral dan keagamaan. Keberadaan candi ini menunjukkan peran penting agama dalam kehidupan sosial dan politik di Jawa pada masa itu.</p>
+        <p id="text5" class="text">Keraton Yogyakarta memainkan peran penting dalam perjuangan kemerdekaan Indonesia, khususnya melalui dukungan Sultan Hamengkubuwono IX. Keraton menjadi pusat kegiatan politik dan budaya yang memperjuangkan kemerdekaan, dengan Yogyakarta menjadi ibu kota Republik Indonesia setelah Jakarta jatuh pada 1947. Sultan juga memberikan perlindungan kepada para pemimpin Republik dan membantu diplomasi internasional untuk kemerdekaan Indonesia. Selain itu, keraton juga berperan dalam menyatukan berbagai kelompok etnis dan agama dalam perjuangan nasionalisme, serta menjadi simbol persatuan bangsa.</p>
+        <p id="text6" class="text">Keraton Yogyakarta menjaga dan melestarikan berbagai tradisi dan nilai budaya Indonesia, khususnya budaya Jawa, melalui upacara adat, seni pertunjukan, dan pendidikan. Upacara seperti Labuhan dan Sekaten tetap dilaksanakan untuk mempertahankan nilai-nilai spiritual dan budaya. Selain itu, keraton juga melestarikan seni tradisional seperti gamelan dan wayang kulit, yang menjadi simbol kebudayaan Jawa. Pendidikan budaya yang diberikan kepada generasi muda melalui kursus seni dan budaya juga memainkan peran besar dalam memastikan tradisi dan nilai-nilai kebudayaan tersebut tetap hidup dan berkembang.</p>
+    </div>
+
+    <script>
+        function showText(index) {
+            // Hide all text elements
+            let texts = document.querySelectorAll('.text');
+            texts.forEach(text => text.style.display = 'none');
+            
+            // Show the clicked text
+            document.getElementById('text' + index).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

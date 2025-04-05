@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutrip to Jogja</title> 
+
+    <style>
+        /* Header */
+        header {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            background: #584738;
+            color: #b59e7d;
+            padding: 20px 0;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #aaa396;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4C2308;
+        }
+
+        /* Body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: blanchedalmond;
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .text {
+            width: 40%; 
+        }
+        .images {
+    width: 60%;
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 10px; /* Add spacing between images */
+}
+
+.images img {
+    width: 100%; /* Make images take full width of container */
+    border-radius: 8px;
+}
+
+
+        /* Footer Layout */
+        .footer-content {
+            display: flex;
+            align-items: flex-start; /* Align text and images */
+            gap: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Footer Image Container */
+        .footer-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            width: 40%; 
+        }
+
+        /* Image Rows */
+        .image-row {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* Image Styling */
+        .footer-image {
+            width: 48%; /* Ensure only two images per row */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Footer Text */
+        .footer-text {
+            width: 60%;
+            text-align: justify;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container, .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .images img, .footer-image {
+                width: 100%; /* Stack images on smaller screens */
+            }
+            .footer-images {
+                width: 100%;
+            }
+            .footer-text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bahasa Indonesia</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="agama.html">Agama</a>
+        <a href="pendidikan_pancasila.html">Pendidikan Pancasila</a>
+        <a href="bahasa_indonesia.html">Bahasa Indonesia</a>
+        <a href="english.html">Bahasa Inggris</a>
+        <a href="ips.html">IPS</a>
+        <a href="mandarin.html">Bahasa Mandarin</a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <div class="container">
+        <div class="text">
+            <h2>Kemewahan dan Kenyamanan di Grand Mercure Yogyakarta:</h2>
+            <h3>Pengalaman Menginap yang Berkesan</h3>
+            <p><strong>Nama hotel:</strong> Grand Mercure</p>
+            <p><strong>Alamat Hotel:</strong> Jl. Laksda Adisucipto No.80, Demangan Baru, Caturtunggal, Sleman, Kota Yogyakarta, Daerah Istimewa Yogyakarta</p>
+            <p><strong>Telp:</strong> (0274) 2924000</p>
+            <p><strong>Tahun berdiri:</strong> 2017</p>
+            <p><strong>Korporasi:</strong> Accor Hotels</p>
+            <p><strong>Rating:</strong> 4.8 (berdasarkan Google)</p>
+        </div>
+
+        <div class="images">
+            <img src="grandmercurejogja.jpg" alt="Tampilan Luar Grand Mercure">
+            <img src="Grand-mercure-3-1.jpg" alt="Lobby Grand Mercure">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-content">
+        <div class="footer-images">
+            <div class="image-row">
+                <img src="bakpia.jpg" alt="Kuliner Khas Jogja" class="footer-image">
+                <img src="gudeg.jpeg" alt="Kuliner Khas Jogja" class="footer-image">
+            </div>
+            <div class="image-row">
+                <img src="malioboro1.webp" alt="Malioboro at Night" class="footer-image">
+                <img src="malioboro2.webp" alt="Malioboro Street" class="footer-image">
+            </div>
+            <div class="image-row"> 
+                <img src="prambanan1.jpg" alt="Prambanan" class="footer-image">
+                <img src="prambanan2.jpg" alt="Prambanan" class="footer-image">
+            </div>
+            <div class="image-row"> 
+                <img src="kamar_grandmercurejogja10.jpg" alt="spa" class="footer-image">
+                <img src="kamar_grandmercurejogja9.jpg" alt="spa" class="footer-image">
+            </div>
+            <div class="image-row"> 
+                <img src="kamar_grandmercurejogja8.jpg" alt="grandmercurejogja" class="footer-image">
+                <img src="kamar_grandmercurejogja7.webp" alt="grandmercurejogja" class="footer-image">
+            </div>
+            <div class="image-row"> 
+                <img src="kamar_grandmercurejogja5.jpg" alt="grandmercurejogja" class="footer-image">
+                <img src="Screenshot 2025-03-25 095902.png" alt="grandmercurejogja" class="footer-image">
+            </div>
+            <div class="image-row"> 
+                <img src="kamar_grandmercurejogja4.jpg" alt="grandmercurejogja" class="footer-image">
+                <img src="kamar_grandmercurejogja3.jpg" alt="grandmercurejogja" class="footer-image">
+            </div>
+            <div class="image-row"> 
+                <img src="581419045kamar_grandmercurejogja2.jpg" alt="grandmercurejogja" class="footer-image">
+                <img src="kamar_grandmercurejogja1.jpg" alt="grandmercurejogja" class="footer-image">
+            </div>
+        </div>
+        
+        <div class="footer-text">
+            <p>
+            Yogyakarta, kota letak hotel Grand Mercure yang lokasinya strategis ini sangat kaya akan budaya dan kuliner. Sebagai pusat budaya Jawa, kota ini memiliki berbagai pengalaman unik, contohnya di Sendratari Ramayana, sebuah pertunjukan tari yang menceritakan kisah epik Ramayana yang letaknya di Prambanan. Tak jauh dari hotel, ada Malioboro yang menjadi pusat keramaian dengan deretan toko, pedagang kaki lima, dan seniman jalanan yang menjadikannya tempat ikonik untuk berbelanja oleh-oleh dan menikmati suasana khas Jogja. Dari segi kuliner, ada gudeg, hidangan nangka muda yang dimasak dengan santan hingga manis, biasanya disajikan dengan ayam yang pedas gurih. Tak kalah terkenal, bakpia pathok, kue berisi kacang hijau atau varian lain seperti coklat dan keju, menjadi oleh-oleh khas yang digemari banyak wisatawan. Yogyakarta memiliki iklim tropis dengan musim hujan pada Oktober-Maret yang cenderung sejuk dan lembap, serta musim kemarau pada April-September yang lebih kering dan cocok untuk wisata alam seperti ke Candi Borobudur, Merapi, dan pantai-pantai di selatan. 
+            </p>
+            <p>
+            Grand Mercure Yogyakarta adalah hotel yang terletak di lokasi strategis, dekat dengan Bandara Internasional Adisutjipto, Malioboro, serta berbagai destinasi wisata budaya seperti Keraton Yogyakarta dan Candi Prambanan. Dengan akses mudah ke pusat perbelanjaan, kawasan bisnis, dan tempat-tempat kuliner khas Jogja, hotel ini menjadi pilihan ideal bagi wisatawan ataupun orang dengan kepentingan bisnis. Dari segi sarana dan prasarana, Grand Mercure Yogyakarta menawarkan fasilitas lengkap seperti kolam renang, pusat kebugaran, restoran dengan menu lokal dan internasional, ruang pertemuan, serta layanan spa untuk kenyamanan tamu. Interior hotel mengusung perpaduan desain modern dengan sentuhan klasik khas Jawa, menciptakan suasana elegan namun tetap hangat dan nyaman.  Harga kamar bervariasi, mulai dari Rp742.000 per malam untuk kamar Superior hingga Rp2.000.000 per malam untuk Deluxe Suite. Dengan variasi harga tersebut, tamu dapat memilih sesuai dengan kebutuhan dan anggaran mereka.
+            <p>
+            Hotel ini cocok untuk wisatawan domestik dan internasional, keluarga, serta pebisnis yang membutuhkan kenyamanan dan fasilitas lengkap. Penjaga di restaurantnya pun sangat sabar. Saat itu ada teman saya yang tidak sengaja memecahkan piring dan mereka pun membersihkannya langsung. Pengalaman menginap yang nyaman dan mewah dengan pelayanan ramah serta fasilitas lengkap. Desain interiornya elegan memberikan nuansa relaksasi yang menyenangkan. Dibandingkan dengan hotel sejenis di Yogyakarta, Grand Mercure menawarkan konsep modern dengan tetap mempertahankan unsur budaya Jawa yang kental. Kebanyakan hotel lain menginginkan nuansa mewah yang tidak terlalu memperlihatkan unsur budaya Jawa. 
+            </p>
+            <p>
+            Pelayanan di Grand Mercure Yogyakarta dikenal sangat baik. Staf hotel responsif terhadap kebutuhan tamu, termasuk layanan guest service yang siap membantu kapan saja. Salah satu pengalaman tamu menunjukkan bahwa staf hotel tetap profesional dan ramah meskipun menghadapi kesalahpahaman kecil, seperti ketika tamu tidak menyadari adanya remote TV dan mencoba mematikannya secara manual. Teknisi yang datang pun tidak mempermasalahkan hal ini dan justru menanggapinya dengan santai, menciptakan suasana yang nyaman bagi tamu. Kebersihan hotel sangat terjaga, baik di kamar, area umum, maupun restoran. Restoran hotel selalu dalam kondisi bersih, dengan staf yang rutin berkeliling untuk mengambil piring kotor dan memastikan kenyamanan tamu saat menikmati hidangan. Hotel menerapkan sistem keamanan 24 jam dengan staf yang sigap dan profesional, memastikan kenyamanan serta keamanan tamu selama menginap. Restoran Grand Mercure Yogyakarta menyajikan menu beragam dengan cita rasa yang lezat, terutama untuk masakan khas Nusantara. Tamu yang menginap selama beberapa hari juga akan menikmati variasi menu yang terus diperbarui, termasuk pilihan sarapan yang berbeda setiap harinya, sehingga tetap menarik bagi tamu yang menginap lebih lama.
+            </p>
+            <p>
+            Secara keseluruhan, Grand Mercure Yogyakarta adalah hotel yang sangat layak untuk dijadikan pilihan utama bagi wisatawan yang menginginkan kenyamanan dan kemewahan. Pelayanan yang ramah, fasilitas lengkap, serta suasana hotel yang elegan membuat pengalaman menginap menjadi menyenangkan. Meskipun ada beberapa kekurangan kecil, seperti bau tidak sedap pada kettle di kamar dan pengaturan parkir yang bisa lebih baik, hal ini tidak mengurangi kualitas pelayanan dan pengalaman yang diberikan hotel ini. 
+            </p>
+                <strong>
+            Bagi wisatawan yang mencari akomodasi dengan fasilitas lengkap dan pelayanan berkualitas di Yogyakarta, Grand Mercure adalah pilihan yang sangat direkomendasikan.
+                </strong>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
